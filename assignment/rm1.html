@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="rm1.css">
+    <script src="rm1.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Kaushan+Script&family=Satisfy&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  
+  <header>
+    <nav class="main">
+      <a href="#home">Home</a>
+      <a href="#campaignform">Form</a>
+      <a href="#contactUs">Contact Us</a>
+    </nav>
+  </header>
+
+<img id="logo" src="iiumlogo1.png" alt="IIUM logo">
+
+<section id="home">
+<h1><img id="campaign" src="image.png" alt="campaign logo"> CAMPAIGN</h1>
+
+
+<div id="intro">
+<div>
+<p  id="tagline1">Let your contributions be</p> 
+<p  id="tagline2">PERPETUAL</p>
+<p  id="tagline3">for the pleasure of Allah SWT</p>
+</div>
+
+<hr>
+<div>
+  <p id="verse1">“The example of those who spend their wealth in the</p>
+  <p id="verse2">way of Allah is like a seed [of grain] which grows seven</p>
+  <p id="verse3">spikes; in each spike is a hundred grains. And Allah</p>
+  <p id="verse4">multiplies [His reward] for whom He wills. And Allah is</p>
+  <p id="verse5">all-Encompassing and Knowing.”</p>
+  <p id="verse6">Al-Baqarah:261</p>
+</div>
+<hr>
+</div>
+</section>
+
+
+<section id="campaignform">
+<form id="form" onsubmit="submitForm();">
+
+  <fieldset>
+    <legend>PARTICIPATION IN RM1 CAMPAIGN — MONTHLY SALARY DEDUCTION</legend>
+
+  <div id="name">
+    <label for="name">Name:</label>
+    <input type="text" id="nameInput" name="name" placeholder="Full name as per IC" required>
+  </div>
+
+  <div id="staffno">
+    <label for="staff_no">Staff No:</label>
+    <input type="text" id="staff_no" name="staff_no" placeholder="xxxxxx" required>
+  </div>
+
+  <div id="kcdio">
+    <label for="kcdio">K/C/D/I/O:</label>
+    <input type="text" id="kcdioInput" name="kcdio" placeholder="K/C/D/I/O"required>
+  </div>
+
+  <div id="contactno">
+    <label for="contact_no">Contact No:</label>
+    <input type="text" id="contact_no" name="contact_no" placeholder="xxx-xxxxxxxx" required>
+  </div>
+  
+  <div id="email">
+    <label for="email">Email:</label>
+    <input type="email" id="emailInput" name="email" placeholder="xxxxx@live.iium.edu.my" required>
+  </div>
+
+  <div id="deduction">
+    <label for="deduction">Amount to be deducted(RM):</label>
+    <input type="text" id="deductionInput" name="deduction" placeholder="0.00" required>
+  </div>
+
+  <div id="start_date">
+    <label for="start_date">Start Date:</label>
+	  <input type="month" id="start_dateInput" name="start_date" placeholder="month, year" required>
+  </div>
+
+  <div id="end_date">
+    <label for="endDate">End Date(or until further notice):</label>
+    <input type="month" id="endDate" name="end_date" required>
+    </div>
+
+  <div id="agree">
+    <input type="radio" id="agreeBox" name="IAgree" value="IAgree" required>
+    <label for="IAgreeBox" id="agreeBox1">I agree to be participate in this campaign and all of my details filled above are true.</label><br>
+  </div>
+
+  <div class="buttons">
+    <button type="button" class="submit" onclick="submitForm()">Submit
+      <span class="overlay"></span></button>
+  <button type="button" class="reset" onclick="resetPage()">Reset
+  <span class="overlay"></span></button>
+
+</div>
+
+</fieldset>
+</form>
+</section>
+
+<section id="contactUs">
+<div class="contact">
+<div id="contact1">
+<p>For more information, please contact:</p>
+<p>IIUM Endowment Fund</p>
+<p>Level 3, Rectory</p>
+<p>International Islamic University Malaysia</p>
+<p>P.O. Box 10</p>
+<p>50728 Kuala Lumpur</p>
+</div>
+
+<div id="contact2">
+<p><img id="contactlogo" src="contact.png" alt="contact logo">Tel: 03 6196 4268</p>
+<p><img id="emaillogo" src="email.png" alt="email logo">Email: ief@iium.edu.my</p>
+<p><img id="websitelogo" src="website.png" alt="website logo">Website: <a href="https://www.iium.edu.my/ief" target="_blank">IEF Official Website</a></p>
+<p><img id="fblogo" src="fblogo.png" alt="fb logo">Facebook: <a href="https://www.facebook.com/ief.official/" target="_blank">IEF Official Facebook</a></p>
+</div>
+</div>
+</section>
+
+<footer>
+  <p> &#169; 2023 IIUM Endowment Fund</p>
+</footer>
+</body>
+</html>
